@@ -1,0 +1,25 @@
+Polymorphism allows an object reference variable or an object pointer
+to reference objects of different types and to call the correct member
+functions, depending upon the type of object being referenced.
+
+EXAMPLE:
+void displayGrade(const GradedActivity &activity)
+{
+cout << setprecision(1) << fixed;
+cout << "The activity's numeric score is "
+<< activity.getScore() << endl;
+cout << "The activity's letter grade is "
+<< activity.getLetterGrade() << endl;
+}
+
+This function uses a const GradedActivity reference variable as its parameter. When a
+GradedActivity object is passed as an argument to this function, the function calls the
+object’s getScore and getLetterGrade member functions to display the numeric score
+and letter grade. The following code shows how we might call the function.
+GradedActivity test(88.0);
+displayGrade(test);
+// The score is 88
+// Pass test to displayGrade
+This code will produce the following output:
+The activity's numeric score is 88.0
+The activity's letter grade is B
