@@ -15,7 +15,7 @@ void SetLength(double h){
 double Area(){
     
     double area= width* height;
-    cout<<"the area of triangle is"<<area<<endl;
+    cout<<"the area of triangle is "<<area<<endl;
     return area;
 
 }
